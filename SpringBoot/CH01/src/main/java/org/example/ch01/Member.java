@@ -13,4 +13,28 @@ public class Member {
 
     @Column(name = "name", nullable = false) //null은 허용하지 않음
     private String name;
+
+    public Member() {
+    }
+
+    public Member(long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
